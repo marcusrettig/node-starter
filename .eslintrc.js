@@ -2,8 +2,12 @@ module.exports = {
   extends: [
     'airbnb-base',
     'plugin:jest/recommended',
+    'plugin:unicorn/recommended',
   ],
-  plugins: ['jest'],
+  plugins: [
+    'jest',
+    'unicorn',
+  ],
   env: {
     'jest/globals': true,
   },
