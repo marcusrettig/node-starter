@@ -3,11 +3,10 @@ module.exports = {
     'airbnb-base',
     'plugin:jest/recommended',
     'plugin:unicorn/recommended',
+    'prettier',
+    'prettier/unicorn',
   ],
-  plugins: [
-    'jest',
-    'unicorn',
-  ],
+  plugins: ['jest', 'unicorn'],
   env: {
     'jest/globals': true,
   },

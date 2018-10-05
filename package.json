@@ -10,13 +10,33 @@
     "lint": "eslint src",
     "test": "jest --watch"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{json,md,yml}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.js": [
+      "tslint --fix",
+      "prettier --write",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "eslint": "^5.6.1",
     "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.1.0",
     "eslint-plugin-import": "^2.14.0",
     "eslint-plugin-jest": "^21.24.1",
     "eslint-plugin-unicorn": "^6.0.1",
+    "husky": "^1.1.1",
     "jest": "^23.6.0",
-    "nodemon": "^1.18.4"
+    "lint-staged": "^7.3.0",
+    "nodemon": "^1.18.4",
+    "prettier": "^1.14.3"
   }
 }
