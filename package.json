@@ -6,7 +6,7 @@
   "author": "marcusrettig",
   "license": "ISC",
   "scripts": {
-    "start": "nodemon --watch src src/app.js",
+    "start": "node src/app.js",
     "lint": "eslint src",
     "test": "jest --watch"
   },
@@ -39,7 +39,6 @@
     "husky": "^1.1.1",
     "jest": "^23.6.0",
     "lint-staged": "^7.3.0",
-    "nodemon": "^1.18.4",
     "prettier": "^1.14.3"
   }
 }
