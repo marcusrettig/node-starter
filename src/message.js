@@ -1,7 +1,3 @@
-function getMessage() {
+export function getMessage() {
   return 'Hello World!';
 }
-
-module.exports = {
-  getMessage,
-};

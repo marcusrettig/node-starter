@@ -1,4 +1,4 @@
-const { getMessage } = require('./message');
+import { getMessage } from './message';
 
 describe('getMessage()', () => {
   test('Message is Hello World', () => {
