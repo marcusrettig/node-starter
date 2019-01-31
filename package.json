@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "",
-  "author": "marcusrettig",
+  "author": "Marcus Rettig",
   "license": "ISC",
   "scripts": {
     "start": "node src/app.js",
