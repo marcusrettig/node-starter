@@ -24,7 +24,7 @@
       "git add"
     ],
     "*.js": [
-      "tslint --fix",
+      "eslint --fix",
       "prettier --write",
       "git add"
     ]
